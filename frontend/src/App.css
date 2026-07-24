@@ -1,0 +1,442 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.store-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #1f2937;
+}
+
+.normal-user-dashboard {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 32px 20px;
+  color: #1f2937;
+}
+
+.store-navbar,
+.store-summary {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.admin-navbar {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 28px 32px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.admin-navbar h1,
+.admin-navbar p {
+  margin-top: 0;
+}
+
+.admin-navbar .navbar-actions {
+  margin-left: auto;
+}
+
+.admin-listings {
+  margin: 28px 32px;
+  padding: 24px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.admin-listings h2,
+.listing-section h3 {
+  margin-top: 0;
+}
+
+.listing-filters {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(140px, 1fr));
+  gap: 12px;
+}
+
+.listing-filters input,
+.listing-filters select {
+  min-width: 0;
+  padding: 9px;
+  border: 1px solid #9ca3af;
+  border-radius: 5px;
+}
+
+.listing-section {
+  margin-top: 28px;
+}
+
+.listing-section table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.listing-section th,
+.listing-section td {
+  padding: 11px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.listing-section button,
+.user-details > button {
+  padding: 7px 10px;
+  border: 0;
+  border-radius: 5px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.user-details {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 24px;
+  padding: 18px;
+  border: 1px solid #bfdbfe;
+  border-radius: 7px;
+  background: #eff6ff;
+}
+
+.user-details h3,
+.user-details p {
+  margin-top: 0;
+}
+
+.profile-menu {
+  position: relative;
+}
+
+.profile-icon {
+  display: grid;
+  width: 42px;
+  height: 42px;
+  place-items: center;
+  border: 1px solid #9ca3af;
+  border-radius: 50%;
+  background: #fff;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.profile-panel {
+  position: absolute;
+  z-index: 10;
+  top: 52px;
+  right: 0;
+  width: 290px;
+  padding: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+  box-shadow: 0 12px 24px rgb(0 0 0 / 15%);
+}
+
+.profile-panel h2 {
+  margin-top: 0;
+}
+
+.profile-panel dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 8px 12px;
+}
+
+.profile-panel dt {
+  font-weight: 700;
+}
+
+.profile-panel dd {
+  margin: 0;
+  overflow-wrap: anywhere;
+}
+
+.profile-panel form {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-top: 16px;
+}
+
+.profile-panel label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.profile-panel input {
+  padding: 8px;
+  border: 1px solid #9ca3af;
+  border-radius: 5px;
+}
+
+.profile-save,
+.profile-logout {
+  width: fit-content;
+  margin-top: 8px;
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.profile-save {
+  background: #2563eb;
+}
+
+.profile-logout {
+  background: #b91c1c;
+}
+
+.profile-message {
+  margin: 10px 0 0;
+}
+
+.store-navbar {
+  padding-bottom: 24px;
+  border-bottom: 1px solid #d1d5db;
+}
+
+.store-navbar h1,
+.rated-users h2 {
+  margin: 0;
+}
+
+.store-navbar p {
+  margin-bottom: 0;
+  color: #4b5563;
+}
+
+.store-navbar button {
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #b91c1c;
+  color: #fff;
+  cursor: pointer;
+}
+
+.store-summary {
+  justify-content: flex-start;
+  margin: 28px 0;
+}
+
+.dashboard-card {
+  min-width: 220px;
+  padding: 20px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.dashboard-card p,
+.dashboard-card h2 {
+  margin: 0;
+}
+
+.dashboard-card h2 {
+  margin-top: 8px;
+}
+
+.rated-users {
+  padding: 24px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.dashboard-section {
+  margin-top: 28px;
+  padding: 24px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.dashboard-section h2 {
+  margin-top: 0;
+}
+
+.search-field,
+.password-section label {
+  display: flex;
+  max-width: 440px;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.search-field input,
+.password-section input {
+  padding: 9px;
+  border: 1px solid #9ca3af;
+  border-radius: 5px;
+}
+
+.stores-table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.stores-table th,
+.stores-table td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.password-section form {
+  display: flex;
+  max-width: 440px;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.password-section button {
+  width: fit-content;
+  padding: 9px 16px;
+  border: 0;
+  border-radius: 6px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.rating-action {
+  display: flex;
+  gap: 8px;
+}
+
+.store-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.store-card {
+  padding: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 7px;
+  background: #f9fafb;
+}
+
+.store-card h3,
+.store-card p {
+  margin: 0 0 9px;
+}
+
+.rating-action select,
+.rating-action button {
+  padding: 7px 9px;
+}
+
+.rating-action button,
+.password-toggle {
+  border: 0;
+  border-radius: 5px;
+  background: #2563eb;
+  color: #fff;
+  cursor: pointer;
+}
+
+.password-toggle {
+  width: fit-content;
+  margin-top: 6px;
+  padding: 5px 8px;
+  font-size: 0.85rem;
+}
+
+.rated-users table {
+  width: 100%;
+  margin-top: 16px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.rated-users th,
+.rated-users td {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+@media (max-width: 600px) {
+  .store-navbar,
+  .store-summary {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .dashboard-card {
+    box-sizing: border-box;
+    width: 100%;
+  }
+
+  .admin-navbar {
+    flex-direction: column;
+    padding: 24px 20px;
+  }
+
+  .admin-navbar .navbar-actions {
+    margin-left: 0;
+  }
+
+  .admin-listings {
+    margin: 20px;
+    padding: 18px;
+    overflow-x: auto;
+  }
+
+  .listing-filters {
+    grid-template-columns: 1fr;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

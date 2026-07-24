@@ -1,0 +1,53 @@
+# =========================
+# Node Modules
+# =========================
+node_modules/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# React Frontend Build
+# =========================
+frontend/build/
+frontend/.cache/
+
+# =========================
+# NestJS Backend Build
+# =========================
+backend/dist/
+
+# =========================
+# Logs
+# =========================
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =========================
+# Testing Coverage
+# =========================
+coverage/
+
+# =========================
+# IDE / Editor Files
+# =========================
+.vscode/
+.idea/
+
+# =========================
+# Operating System Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
