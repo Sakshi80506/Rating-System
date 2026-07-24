@@ -11,14 +11,11 @@ This project was developed as part of the **Full Stack Intern Coding Challenge**
 
 ## Frontend
 - React.js
-- HTML5
-- CSS3
-- Axios
+- HTML
+- CSS
 
 ## Backend
 - NestJS
-- TypeScript
-- REST APIs
 
 ## Database
 - MySQL
