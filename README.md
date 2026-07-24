@@ -64,72 +64,31 @@ Features:
 
 ---
 
-# 📁 Project Structure
-Rating_System/
 
-│
-├── Backend/
-│ ├── src/
-│ │ ├── admin/
-│ │ ├── user/
-│ │ ├── store/
-│ │ ├── database.ts
-│ │ ├── app.module.ts
-│ │ └── main.ts
-│ │
-│ └── package.json
-│
-├── frontend/
-│ ├── src/
-│ │ ├── pages/
-│ │ │ ├── Login.js
-│ │ │ ├── AdminDashboard.js
-│ │ │ ├── NormalUserDashboard.js
-│ │ │ └── StoreUserDashboard.js
-│ │ │
-│ │ ├── services/
-│ │ │ └── api.js
-│ │ │
-│ │ └── App.js
-│ │
-│ └── package.json
-│
-└── README.md
+1. Backend Setup
 
-
-Backend Setup
-
-Navigate to backend:
-
+- Navigate to backend:
 cd Backend
 
-Install dependencies:
-
+- Install dependencies:
 npm install
-
 Configure MySQL database connection.
 
-Start backend server:
-
+- Start backend server:
 npm run start
 
-Backend will run on:
-
+- Backend will run on:
 http://localhost:3000
-Frontend Setup
 
-Open another terminal:
-
+2. Frontend Setup
+- Open another terminal:
 cd frontend
 
-Install dependencies:
-
+- Install dependencies:
 npm install
 
-Start React application:
-
+- Start React application:
 npm start
 
-Frontend will run on:
-
+- Frontend will run on:
 http://localhost:3000
